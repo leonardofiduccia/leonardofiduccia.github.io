@@ -43,7 +43,7 @@ function setQuestionText(text) {
 
   // After fade-out, update text and fade back in
   setTimeout(() => {
-    questionEl.textContent = `🦌 ${text.text ?? text}`; //Read text attribute from an object or a string
+    questionEl.textContent = `${text.text ?? text}`; //Read text attribute from an object or a string
     questionEl.classList.remove('fade-out');
   }, 200);
 }
