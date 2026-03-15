@@ -13,7 +13,7 @@ let lastSkippedQuestion = null;
 async function loadQuestionsFromSheet() {
   try {
     const response = await fetch(
-      'https://icemaker-backend.vercel.app/api/questions'
+      'api/questions'
     );
 
     const data = await response.json();
